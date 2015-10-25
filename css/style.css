@@ -205,13 +205,14 @@ a:focus {
         margin: 0; }
     .post .post-content table {
       margin: 2em 0; }
-  .post .tags {
-    padding-bottom: 1em; }
-    .post .tags a {
-      margin-right: .5em; }
-      .post .tags a:before {
-        content: '#';
-        display: inline-block; }
+
+.tags {
+  padding-bottom: 1em; }
+  .tags a {
+    margin-right: .5em; }
+    .tags a:before {
+      content: '#';
+      display: inline-block; }
 
 .page-navigator {
   border-top: 1px solid #ddd;
