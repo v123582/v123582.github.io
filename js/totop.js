@@ -1,6 +1,6 @@
 $(window).scroll(function() {
-        $(window).scrollTop() > 100 ? $("#rocket").addClass("show") : $("#rocket").removeClass("show");
-    });
+    $(window).scrollTop() > 100 ? $("#rocket").addClass("show") : $("#rocket").removeClass("show");
+});
     $("#rocket").click(function() {
         $("#rocket").addClass("launch");
         $("html, body").animate({
@@ -11,6 +11,14 @@ $(window).scroll(function() {
         return false;
     });
 
+
+jQuery(document).ready(function($) {
+ 
+    $(".scroll").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+});
 
 function generateToc (rootNode, startLevel) {
   var lastLevel = 0;
@@ -43,7 +51,7 @@ function generateToc (rootNode, startLevel) {
         html += "</ol></li>";
     }
 
-    html += "<li class='post-list-item'><i class='fa fa-paperclip'></i><a class='post-list-link lvl"+level+"' href='#" + hashable + "'>　" + name + "</a><ol>";
+    html += "<li class='post-list-item'><i class='fa fa-paperclip'></i><a class='scroll lvl"+level+"' href='#" + hashable + "'>　" + name + "</a><ol>";
     lastLevel = level;
   }
   html += '</ul>'
