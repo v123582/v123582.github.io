@@ -111,7 +111,7 @@ a:focus {
       margin-top: 10px; }
       #sidebar .widget .tagcloud a {
         line-height: 1.5;
-        padding: 5px; }
+        padding-right: 5px; }
     #sidebar .widget ul {
       list-style: none;
       padding: 0; }
