@@ -1,32 +1,51 @@
 <a id="rocket" href="#top" class="show"></a><html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="telephone=no" name="format-detection"/><meta name="description"/><title>用 Hexo 建立一個自己的部落格 | WeiYuan Note</title><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/><link rel="stylesheet" type="text/css" href="/css/profile-card.css"/><!--+get_resource("blog_basic.css")--><link rel="stylesheet" type="text/css" href="/css/normalize.css"/><link rel="stylesheet" type="text/css" href="/css/pure-min.css"/><link rel="stylesheet" type="text/css" href="/css/grids-responsive-min.css"/><link rel="stylesheet" type="text/css" href="/css/highlight.css"/><link rel="stylesheet" type="text/css" href="/css/style.css"/><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">用 Hexo 建立一個自己的部落格</h1><a id="logo" href="/">WeiYuan Note</a><p class="description">http://v123582.github.io/</p></div><div id="nav-menu"><a href="/about">About</a><a href="/timeline">Experience</a><a href="/">Posts</a><a href="/categories/生活/">Lifes</a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post post-page"><h1 class="post-title"><span><i style="padding-right: 25px;" class="fa fa-star"></i></span>用 Hexo 建立一個自己的部落格</h1><div class="post-meta">October 25, 2015</div><span data-thread-key="2015/10/25/用-hexo-建立一個自己的部落格/" class="ds-thread-count"></span><div class="post-content"><h2 id="&#x4EC0;&#x9EBC;&#x662F;-hexo">&#x4EC0;&#x9EBC;&#x662F; hexo&#xFF1F;</h2><blockquote>
-<p>Hexo &#x662F;&#x4E00;&#x500B;&#x7528; node &#x64B0;&#x5BEB;&#xFF0C;&#x652F;&#x63F4; markdown &#x7684; static blog template&#x3002;</p>
+<p><a href="https://hexo.io/zh-tw/" target="_blank" rel="external">Hexo</a> &#x662F;&#x4E00;&#x500B;&#x7528; node &#x64B0;&#x5BEB;&#xFF0C;&#x652F;&#x63F4; markdown &#x7684; static blog template&#x3002;</p>
 </blockquote>
+<p><img src="http://i.imgur.com/5fM26uC.png" alt="Imgur"></p>
 <h2 id="&#x600E;&#x9EBC;&#x4F7F;&#x7528;">&#x600E;&#x9EBC;&#x4F7F;&#x7528;&#xFF1F;</h2><ul>
-<li>&#x5B89;&#x88DD;</li>
+<li>&#x5B89;&#x88DD;&#x53CA;&#x5EFA;&#x7ACB;&#x5C08;&#x6848;</li>
 </ul>
-<pre><code>$ npm install -g hexo-cli # &#x5229;&#x7528; npm &#x5B89;&#x88DD; hexo
-</code></pre><ul>
-<li>&#x5EFA;&#x7ACB; hexo &#x5C08;&#x6848;</li>
-</ul>
-<pre><code>$ hexo init &lt;folder&gt; # &#x5EFA;&#x7ACB;&#x4E00;&#x500B; hexo &#x5C08;&#x6848;
+<p>&#x8981;&#x8A18;&#x5F97;&#x5148;&#x5B89;&#x88DD; node &#x53CA; npm &#xFF0C;&#x518D;&#x5229;&#x7528; npm &#x5B89;&#x88DD; hexo&#xFF0C;&#x5B89;&#x88DD;&#x4E4B;&#x5F8C;&#x6703;&#x5728;&#x76EE;&#x9304;&#x5E95;&#x4E0B;&#x958B;&#x4E86;&#x4E00;&#x500B; hexo &#x5C08;&#x6848;&#x3002;</p>
+<pre><code>$ npm install -g hexo-cli
+# &#x5229;&#x7528; npm &#x5B89;&#x88DD; hexo &#x5728; global 
+$ hexo init &lt;folder&gt;
+# &#x5EFA;&#x7ACB;&#x4E00;&#x500B; hexo &#x5C08;&#x6848;
 $ cd &lt;folder&gt;
 $ npm install
+# &#x5229;&#x7528; npm &#x5B89;&#x88DD;&#x76F8;&#x4F9D;&#x5957;&#x4EF6;
 </code></pre><ul>
 <li>&#x5BEB;&#x4F5C;</li>
 </ul>
+<p>&#x958B;&#x4E00;&#x7BC7;&#x65B0;&#x6587;&#x7AE0;&#x7684;&#x65B9;&#x6CD5;&#x5F88;&#x7C21;&#x55AE;&#xFF0C;&#x4F7F;&#x7528;&#x5167;&#x5EFA;&#x6307;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x52A0; <code>layout</code> &#x53C3;&#x6578;&#x6C7A;&#x5B9A;&#x7248;&#x578B;&#x3002;&#x7248;&#x578B;&#x6703;&#x5B58;&#x5728; <code>./scaffolds</code> &#xFF0C;&#x9810;&#x8A2D;&#x662F; post &#x7248;&#x578B;&#x3002;&#x96A8;&#x5F8C;&#x6703;&#x5728; <code>./source</code> &#x591A;&#x4E86;&#x4E00;&#x500B; markdown &#x6A94;&#x6848;&#xFF0C;&#x9019;&#x500B;&#x5C31;&#x662F;&#x5EFA;&#x7ACB;&#x7684;&#x65B0;&#x6587;&#x7AE0;&#x3002;</p>
 <pre><code>$ hexo new [layout] &lt;title&gt;
 </code></pre><ul>
 <li>&#x672C;&#x6A5F;&#x7AEF;&#x767C;&#x5E03;</li>
 </ul>
-<pre><code>$ hexo server
+<p>&#x7531;&#x65BC;&#x6587;&#x7AE0;&#x90FD;&#x662F;&#x4F7F;&#x7528; markdown &#x683C;&#x5F0F;&#x5B58;&#x5728;&#xFF0C;&#x56E0;&#x6B64;&#x5FC5;&#x9808;&#x8981;&#x8F49;&#x6210; html &#x624D;&#x53EF;&#x4EE5;&#x8B8A;&#x6210;&#x4E00;&#x500B;&#x5B8C;&#x6574;&#x7684;&#x7DB2;&#x7AD9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#x5728;&#x7522;&#x751F;&#x3002;</p>
+<pre><code>$ hexo generate
 </code></pre><ul>
 <li>&#x767C;&#x4F48; &amp; &#x90E8;&#x7F72;</li>
 </ul>
-<pre><code>$ hexo generate
+<p>heox &#x6709;&#x4E00;&#x500B;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; git &#x767C;&#x5E03;&#x5C08;&#x6848;&#x3002;&#x53EF;&#x4EE5;&#x53C3;&#x8003; pulgin: hexo-deployer-git&#x3002;&#x8A2D;&#x5B9A;&#x5728; <code>./_config.yml</code> &#x4E2D;&#x7684; deploy&#x3002;</p>
+<pre><code>$ hexo server
+# INFO  Hexo is running at 0.0.0.0:4000
 $ hexo deploy
-# or
-$ hexo generate --deploy
-</code></pre><h2 id="&#x8A2D;&#x5B9A;">&#x8A2D;&#x5B9A;</h2><h2 id="&#x6BD4;&#x8F03;">&#x6BD4;&#x8F03;</h2><h2 id="reference">Reference</h2><hr>
+# INFO  Hexo is running at remote site
+</code></pre><h2 id="&#x8A2D;&#x5B9A;">&#x8A2D;&#x5B9A;</h2><p>hexo &#x7684;&#x4E3B;&#x8981;&#x8A2D;&#x5B9A;&#x6709;&#x5169;&#x500B;&#x5730;&#x65B9;&#xFF1A;</p>
+<ul>
+<li><code>./_config.yml</code>: &#x5168;&#x57DF;&#x7684;&#x74B0;&#x5883;&#x8A2D;&#x5B9A;</li>
+<li><code>./themes/&lt;theme&gt;/_config.yml</code>: &#x4F7F;&#x7528;&#x4E3B;&#x984C;&#x7684;&#x74B0;&#x5883;&#x8A2D;&#x5B9A;</li>
+</ul>
+<p>&#x4E5F;&#x6709;&#x5F88;&#x591A;&#x5957;&#x4EF6;&#x53EF;&#x4EE5;&#x652F;&#x63F4;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0A;&#x5B98;&#x65B9;&#x597D;&#x597D;&#x7814;&#x7A76;&#x3002;</p>
+<h2 id="&#x6BD4;&#x8F03;">&#x6BD4;&#x8F03;</h2><p>static blog template &#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Hexo &#x4E4B;&#x5916;&#xFF0C;&#x5404;&#x5E38;&#x7528;&#x8A9E;&#x8A00;&#x4E5F;&#x90FD;&#x6709;&#x985E;&#x4F3C;&#x7684;&#x5957;&#x4EF6;&#xFF1A;</p>
+<ul>
+<li>Ruby      : Jekyll</li>
+<li>Python      : Hyde </li>
+<li>PHP          : Phrozn</li>
+<li>JS          : Hexo</li>
+</ul>
+<h2 id="reference">Reference</h2><p>[1] <a href="https://hexo.io/zh-tw/" target="_blank" rel="external">Hexo</a></p>
+<hr>
 <h2 id="license">License</h2><p><img class="left" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"><br><br>&#x672C;&#x8457;&#x4F5C;&#x7531;<a href="https://www.facebook.com/v123582" target="_blank" rel="external">Chang Wei-Yaun (v123582)</a>&#x88FD;&#x4F5C;&#xFF0C;<br>&#x4EE5;<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.zh_TW" target="_blank" rel="external">&#x5275;&#x7528;CC &#x59D3;&#x540D;&#x6A19;&#x793A;-&#x76F8;&#x540C;&#x65B9;&#x5F0F;&#x5206;&#x4EAB; 3.0 Unported</a>&#x6388;&#x6B0A;&#x689D;&#x6B3E;&#x91CB;&#x51FA;&#x3002;</p>
 </div><div id="disqus_thread"></div><script type="text/javascript">
 var disqus_shortname = 'v123582';
