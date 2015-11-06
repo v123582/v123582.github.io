@@ -461,3 +461,17 @@ div {
 
 i.fa.fa-star {
   padding-right: 25px; }
+
+ul.gallery-list {
+  list-style: none;
+  list-style-image: none;
+  padding: 0; }
+
+ul.gallery-list li {
+  width: 50%;
+  float: left;
+  padding-right: 10px; }
+
+ul.gallery-list li:nth-child(even) {
+  padding-left: 10px;
+  padding-right: 0; }
