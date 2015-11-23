@@ -475,3 +475,15 @@ ul.gallery-list li {
 ul.gallery-list li:nth-child(even) {
   padding-left: 10px;
   padding-right: 0; }
+
+table {
+  border: 1px solid #666;
+  border-collapse: collapse; }
+  table tr, table td {
+    border: 1px solid #666; }
+  table tr:nth-child(even) {
+    background: #CCC; }
+  table tr:nth-child(odd) {
+    background-color: #FAFAFA; }
+  table td:hover {
+    background-color: #E6FBFF; }
