@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="v123582@gmail.com"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/><meta content="telephone=no" name="format-detection"/><meta name="description"/><title>MacOS 開發環境設定 | WeiYuan Note</title><link rel="stylesheet" type="text/css" href="/blog//css/normalize.css"/><link rel="stylesheet" type="text/css" href="/blog//css/pure-min.css"/><link rel="stylesheet" type="text/css" href="/blog//css/grids-responsive-min.css"/><link rel="stylesheet" type="text/css" href="/blog//css/style.css"/><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"/><link rel="alternate" type="application/atom+xml" href="/atom.xml"/></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">MacOS 開發環境設定</h1><a id="logo" href="http://v123582.github.io">WeiYuan Note</a><p class="description">Experience never goes out of fashion</p></div><div id="nav-menu"><a href="http://v123582.github.io/about"><i class="icon-about"> 關於</i></a><a href="/" class="current"><i class="icon-home"> 所有文章</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post post-page"><h1 class="post-title">MacOS 開發環境設定</h1><div class="post-meta">2015-12-06 | <span class="categories">分類於<a href="/blog/categories/System/"> System</a></span></div><div class="post-content"><h2 id="Package_Manager"><a href="#Package_Manager" class="headerlink" title="Package Manager"></a>Package Manager</h2><h3 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h3><p>Homebrew 是一套很好用的套件管理工具，有點像是 Ubuntu 上的 apt-get，可以幫助你快速安裝你所需要工具</p>
+<h3 id="u5B89_u88DD"><a href="#u5B89_u88DD" class="headerlink" title="安裝"></a>安裝</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ruby <span class="operator">-e</span> <span class="string">"<span class="variable">$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)</span>"</span></span><br></pre></td></tr></table></figure>
+<h3 id="u4F7F_u7528"><a href="#u4F7F_u7528" class="headerlink" title="使用"></a>使用</h3><ul>
+<li><code>brew search</code> 搜尋套件</li>
+<li><code>brew info</code> 查詢套件資訊</li>
+<li><code>brew list</code> 已經裝了哪些套件</li>
+<li><code>brew update</code> 更新 homebrew </li>
+<li><code>brew install</code> 安裝套件</li>
+</ul>
+<h3 id="u5176_u4ED6"><a href="#u5176_u4ED6" class="headerlink" title="其他"></a>其他</h3><ul>
+<li><a href="https://github.com/caskroom/homebrew-cask" target="_blank" rel="external">homebrew-cask</a>：基於 Homebrew 的軟體安裝工具，可以快速透過 terminal 下載軟體</li>
+</ul>
+<hr>
+<h2 id="Terminal"><a href="#Terminal" class="headerlink" title="Terminal"></a>Terminal</h2><h3 id="itrem2_+_Zsh_28Z_Shell_29_+_Oh-My-Zsh"><a href="#itrem2_+_Zsh_28Z_Shell_29_+_Oh-My-Zsh" class="headerlink" title="itrem2 + Zsh(Z Shell) + Oh-My-Zsh"></a>itrem2 + Zsh(Z Shell) + Oh-My-Zsh</h3><p>iTerm2 是社群開發出來取代 Mac OS X 內建的 Terminal(終端機) 的好用軟體，Zsh 是一個加強版的 Shell，多了一些人性化的功能，Oh-My-Zsh 則是一套好用的 Zsh 套件。</p>
+<h3 id="u512A_u9EDE"><a href="#u512A_u9EDE" class="headerlink" title="優點"></a>優點</h3><ul>
+<li>與 bash 語法幾乎相容</li>
+<li>錯字自動矯正</li>
+<li>自動完成</li>
+<li>歷史紀錄可以跨 Session 共享</li>
+<li>內建 pager，不用每次都打 | less 分頁</li>
+<li>更強大的檔名比對 (Filename Globbing)</li>
+<li>更容易上手的 Script Language</li>
+<li>有 Oh-My-Zsh 套件可以使用，Oh-My-Zsh 集合了很多好用的主題/套件</li>
+</ul>
+<h3 id="u5B89_u88DD-1"><a href="#u5B89_u88DD-1" class="headerlink" title="安裝"></a>安裝</h3><ul>
+<li><a href="http://iterm2.com/downloads.html" target="_blank" rel="external">itrem2</a>：直接從官網下載</li>
+<li><a href="http://www.zsh.org/" target="_blank" rel="external">Zsh</a>：Mac 內建已經安裝</li>
+<li><a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">Oh-My-Zsh</a></li>
+</ul>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>curl -<span class="constant">L</span> <span class="symbol">https:</span>/<span class="regexp">/github.com/robbyrussell</span><span class="regexp">/oh-my-zsh/raw</span><span class="regexp">/master/tools</span><span class="regexp">/install.sh | sh</span></span><br></pre></td></tr></table></figure>
+<h3 id="u4E3B_u984C/_u5957_u4EF6"><a href="#u4E3B_u984C/_u5957_u4EF6" class="headerlink" title="主題/套件"></a>主題/套件</h3><p>安裝完之後，可以對主題/套件做一些調整，Oh-My-Zsh 本身就有非常多樣的<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes" target="_blank" rel="external">主題</a>可以直接使用<br>主題/套件主要的設定在<code>~/.zshrc</code></p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>vim ~<span class="regexp">/.zshrc</span></span><br></pre></td></tr></table></figure>
+<p>內容設定如下：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME = <span class="string">"agnoster"</span></span><br><span class="line"><span class="preprocessor"># 將 ZSH_THEME 設為主題的名稱，以 agnoster 主題為例</span></span><br><span class="line">plugins=( plugin1 plugin2 ... )</span><br><span class="line"><span class="preprocessor"># plugins 是設定要使用的套件名稱，以空格分開。套件是要另外安裝的！</span></span><br><span class="line"><span class="keyword">export</span> LC_ALL=en_US.UTF-<span class="number">8</span></span><br><span class="line"><span class="keyword">export</span> LANG=en_US.UTF-<span class="number">8</span></span><br><span class="line"><span class="preprocessor"># 中文設定的話要加上這兩行</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Note. agnoster 主題在中文字形方面可以會有問題，所以要改用 <a href="https://github.com/supermarin/powerline-fonts/blob/master/Monaco/Monaco%20for%20Powerline.otf?raw=true" target="_blank" rel="external">Monaco for Powerline</a> 字體，更改方式走介面即可</p>
+<ul>
+<li>iTerm -&gt; Ｐreferences -&gt; Profiles -&gt; Text -&gt; Change Font</li>
+</ul>
+</blockquote>
+<p>另外，推薦幾個好用的套件</p>
+<ul>
+<li><a href="https://github.com/zsh-users/zsh-syntax-highlighting" target="_blank" rel="external">zsh-syntax-highlighting</a></li>
+</ul>
+<h3 id="u5B8C_u6210_u5716"><a href="#u5B8C_u6210_u5716" class="headerlink" title="完成圖"></a>完成圖</h3><p><img src="http://user-image.logdown.io/user/4431/blog/4465/post/230789/ONYsdKPwTgSFRlv8NAOV_shell.png" alt="shell.png"></p>
+<!---
+
+## Editor
+### **<font color='blue'>Sublime text 2</font>**
+### 基本操作及常用快捷鍵
+### 套件
+
+---
+
+## 系統變數設定
+
+--->
+<hr>
+<h2 id="u5176_u4ED6-1"><a href="#u5176_u4ED6-1" class="headerlink" title="其他"></a>其他</h2><h3 id="Git__u7248_u672C_u63A7_u5236_u7684_u57FA_u672C_u64CD_u4F5C_u7B46_u8A18"><a href="#Git__u7248_u672C_u63A7_u5236_u7684_u57FA_u672C_u64CD_u4F5C_u7B46_u8A18" class="headerlink" title="Git 版本控制的基本操作筆記"></a><a href="http://weiyuan.logdown.com/posts/230647" target="_blank" rel="external">Git 版本控制的基本操作筆記</a></h3><hr>
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>[1] <a href="http://brew.sh/" target="_blank" rel="external">Homebrew</a><br>[2] <a href="http://iphone4.tw/forums/showthread.php?t=206652" target="_blank" rel="external">Oh-My-Zsh 讓你的終端機更強大更美觀</a><br>[3] <a href="http://ksmx.me/homebrew-cask-cli-workflow-to-install-mac-applications/" target="_blank" rel="external">简洁优雅的Mac OS X软件安装体验 - homebrew-cask</a></p>
+<hr>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p><img class="left" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"><br><br>本著作由<a href="https://www.facebook.com/v123582" target="_blank" rel="external">Chang Wei-Yaun (v123582)</a>製作，<br>以<a href="http://creativecommons.org/licenses/by-sa/3.0/deed.zh_TW" target="_blank" rel="external">創用CC 姓名標示-相同方式分享 3.0 Unported</a>授權條款釋出。</p>
+</div><div class="post-nav"><a href="/blog/2015/12/30/hello-world/" class="pre"><i class="icon-previous">Hello World</i></a><a href="/blog/2015/10/28/Data-Crawler-using-Selenium/" class="next">Data Crawler using Selenium<i class="icon-next"></i></a></div><div id="disqus_thread"><script>var disqus_shortname = 'v123582';
+var disqus_identifier = '2015/12/06/MacOS-開發環境設定/';
+var disqus_title = 'MacOS 開發環境設定';
+var disqus_url = 'http://v123582.github.io/blog/2015/12/06/MacOS-開發環境設定/';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//v123582.disqus.com/count.js" async="async"></script></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search" class="search-form-input"/><input type="hidden" name="sitesearch" value="http://v123582.github.io/blog"/></form></div><div class="widget"><div class="widget-title">分類</div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/Data-Science/">Data Science</a></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/Scholarship/">Scholarship</a></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/System/">System</a></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/Web-development/">Web development</a></li></ul></div><div class="widget"><div class="widget-title">標籤</div><div class="tagcloud"><a href="/blog/tags/資料前處理/" style="font-size: 15px;">資料前處理</a> <a href="/blog/tags/資料庫/" style="font-size: 15px;">資料庫</a> <a href="/blog/tags/Python/" style="font-size: 15px;">Python</a> <a href="/blog/tags/Scholarship/" style="font-size: 15px;">Scholarship</a> <a href="/blog/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/blog/tags/Node/" style="font-size: 15px;">Node</a> <a href="/blog/tags/TANET2015/" style="font-size: 15px;">TANET2015</a> <a href="/blog/tags/環境設定/" style="font-size: 15px;">環境設定</a></div></div><div class="widget"><div class="widget-title">最新文章</div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/blog/2015/12/30/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2015/12/06/MacOS-開發環境設定/">MacOS 開發環境設定</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2015/10/28/Data-Crawler-using-Selenium/">Data Crawler using Selenium</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2015/10/25/用-hexo-建立一個自己的部落格/">用 Hexo 建立一個自己的部落格</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2015/10/23/TANET-2015-暨南大學發表紀錄/">TANET 2015 暨南大學發表紀錄</a></li><li class="post-list-item"><a class="post-list-link" href="/blog/2014/07/14/研究所推甄經驗分享/">研究所推甄經驗分享</a></li></ul></div><div class="widget"><div class="widget-title">最近評論</div><script type="text/javascript" src="//v123582.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div></div></div></div><div id="footer">© <a href="/" rel="nofollow">WeiYuan Note.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div><a id="rocket" href="#top" class="show"></a><script src="/blog//js/jquery.min.js" type="text/javascript"></script>
+<script src="/blog//js/totop.js" type="text/javascript"></script><script src="/blog//js/fancybox.pack.js" type="text/javascript"></script>
+<script src="/blog//js/jquery.fancybox.js" type="text/javascript"></script><link rel="stylesheet" href="/blog//css/jquery.fancybox.css" type="text/css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-59103909-1','auto');ga('send','pageview');
+</script></div></body></html>
