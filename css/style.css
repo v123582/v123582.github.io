@@ -1122,3 +1122,6 @@ table {
     padding: 5px 10px; }
   table tr:nth-child(2n) {
     background: #f7f8f8; }
+
+i.fa.fa-star {
+  padding-right: 25px; }
