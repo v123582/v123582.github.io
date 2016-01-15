@@ -5,7 +5,7 @@
  * @version 2.0
  * @link http://chopstack.com
  */
-body {
+* {
   background-color: #FFF;
   color: #444;
   font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
