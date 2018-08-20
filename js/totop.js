@@ -15,7 +15,12 @@ jQuery(document).ready(function($) {
  
     $(".scroll").click(function(event){     
         event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        document.getElementById(decodeURIComponent(this.hash.replace('#', ''))).scrollIntoView({
+          block: 'start',
+          behavior: 'smooth'
+        });
+
+        // $('html,body').animate({scrollTop:document.getElementById(this.hash.replace('#', '')).offset().top}, 500);
     });
 });
 
@@ -34,10 +39,10 @@ function generateToc (rootNode, startLevel) {
     if (level < startLevel) { continue; }
 
     var name = node.innerText;
-    if (node.children.length) { name = node.childNodes[0].innerText; }
+    // if (node.children.length) { name = node.childNodes[0].innerText; }
 
-    //skip this node if there is no name
-    if (!name) { continue; }
+    // //skip this node if there is no name
+    // if (!name) { continue; }
 
     var hashable = name.replace(/[\.\s]/g, "-");
     node.id = hashable;
